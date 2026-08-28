@@ -1,0 +1,31 @@
+generated: '2026-08-28'
+method: searched
+source: >-
+  Registry searches against registry.npmjs.org, pypi.org, and the public GitHub org
+  https://github.com/sonatus, plus the Sonatus corporate site (www.sonatus.com) and its
+  sitemap index. No first-party Sonatus client library was found in any public registry.
+package_count: 0
+packages: []
+note: >-
+  Sonatus publishes no first-party SDK or client library to any public package registry.
+  npm search for "sonatus" returns zero packages; https://pypi.org/pypi/sonatus/json returns 404.
+  The public GitHub organization github.com/sonatus holds 17 repositories and EVERY ONE of them
+  is a fork of an upstream open-source project (onnxruntime, grpc, dlt-daemon, PcapPlusPlus,
+  osquery, superset, mqtt_cpp, bazel-zig-cc, snt-capicxx-core-runtime, snt-capicxx-someip-runtime
+  and similar build/automotive-middleware tooling) with no first-party source, no releases and no
+  published contract. The forks of the CommonAPI C++ SOME/IP runtimes and dlt-daemon are evidence
+  of the in-vehicle stack Sonatus builds on, not of a Sonatus-authored interface.
+  Sonatus' own December 2023 press release for its Vehicle Personalization Solution states the
+  offering ships "an SDK comprising Sonatus Automator, APIs, and documentation" to OEMs; that SDK
+  is distributed to contracted OEM customers and has no public registry presence to version.
+registries_searched:
+- registry: npm
+  query: https://registry.npmjs.org/-/v1/search?text=sonatus
+  result: no matching first-party package
+- registry: pypi
+  query: https://pypi.org/pypi/sonatus/json
+  status: 404
+- registry: github
+  query: https://api.github.com/orgs/sonatus/repos
+  status: 200
+  result: 17 repositories, all forks of upstream projects

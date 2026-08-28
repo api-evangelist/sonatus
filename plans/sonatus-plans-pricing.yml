@@ -1,0 +1,15 @@
+generated: '2026-08-28'
+method: searched
+source: >-
+  https://www.sonatus.com/ site walk plus the full sitemap index
+  (https://www.sonatus.com/sitemap_index.xml, HTTP 200), which enumerates post, page, event, job,
+  office_location, partner, press_release, resource, category, tag, team, video and author
+  sitemaps and contains NO pricing, plans, developer or docs section.
+plan_count: 0
+plans: []
+pricing_model: enterprise-contract
+note: >-
+  Sonatus publishes no plans, tiers, list prices or self-service signup. It sells the Fastlane
+  platform and the Sonatus Automator SDK to vehicle OEMs and tier-one suppliers under negotiated
+  commercial agreements; the only commercial call to action on the site is the contact form at
+  https://www.sonatus.com/contact/ (HTTP 200). This is an honest zero, not an unchecked field.

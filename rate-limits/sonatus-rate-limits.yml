@@ -1,0 +1,13 @@
+generated: '2026-08-28'
+method: searched
+source: >-
+  Corporate site and sitemap index walk of www.sonatus.com, plus probes of docs.sonatus.com
+  (HTTP 403 on every path). No public API reference exists in which rate limits could be published.
+limit_count: 0
+limits: []
+headers: []
+note: >-
+  No rate limits are documented, because Sonatus publishes no public API reference. The APIs
+  referenced in Sonatus marketing material ship inside the OEM SDK and their reference material is
+  not reachable without a customer agreement, so there is no public surface on which a limit,
+  window, burst, RateLimit-* response header or 429 behaviour could be stated. Honest zero.

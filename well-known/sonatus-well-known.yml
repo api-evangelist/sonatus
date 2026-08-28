@@ -1,0 +1,58 @@
+generated: '2026-08-28'
+method: probed
+source: >-
+  Direct unauthenticated HTTP probes of every Sonatus host reachable from the public internet.
+  www.sonatus.com is the corporate WordPress site; docs.sonatus.com is a CloudFront distribution
+  that answers 403 "Request blocked" (AWS WAF deny) on every path, including paths that do not
+  exist, with and without a browser User-Agent. No .well-known document was served by either host.
+note: >-
+  Recorded absence. NO WellKnown or SecurityTxt pointer is emitted in apis.yml, because not one
+  path returned a 200 carrying a real document. The 404 bodies on www.sonatus.com are the
+  WordPress theme's HTML 404 page, not documents.
+hosts:
+- host: www.sonatus.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: docs.sonatus.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null

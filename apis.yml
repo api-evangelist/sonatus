@@ -1,17 +1,33 @@
 aid: sonatus
 name: Sonatus
-description: 'Sonatus is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Sonatus, Inc. is a Sunnyvale, California automotive software company, founded in 2018, that
+  builds cloud-to-edge vehicle AI software for software-defined vehicles (SDVs). Its Fastlane platform
+  pairs in-vehicle Fastlane Edge software with Fastlane Collector for dynamic, policy-driven vehicle data
+  collection, Fastlane Insight for cloud-side analysis, and Fastlane Copilot for quick-start integration,
+  alongside the Sonatus Automator vehicle-automation product. Sonatus states its technology is deployed
+  in more than eight million vehicles worldwide, and it is backed by Hyundai Motor Group, Kia, LG, Marvell,
+  NEC, Foxconn and Translink Capital. Sonatus sells to vehicle OEMs and tier-one suppliers rather than
+  to individual developers: it markets an SDK comprising Sonatus Automator, APIs and documentation, but
+  that developer surface is delivered to contracted OEM customers and is not published on any public developer
+  portal.'
 url: https://raw.githubusercontent.com/api-evangelist/sonatus/refs/heads/main/apis.yml
+image: https://www.sonatus.com/wp-content/uploads/2023/05/sonatus-logo.svg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-28'
 modified: '2026-08-28'
 tags:
 - Company
+- Automotive
+- Software Defined Vehicle
+- Vehicle Data
+- Connected Vehicles
+- Automotive Software
+- Edge AI
+- Telematics
+- Embedded Software
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,56 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sonatus-domain-security.yml
 - type: Website
+  url: https://www.sonatus.com/
+- type: About
+  url: https://www.sonatus.com/company/
+- type: Blog
+  url: https://www.sonatus.com/blog/
+- type: Support
+  url: https://www.sonatus.com/contact/
+- type: GitHubOrganization
+  url: https://github.com/sonatus
+- type: TermsOfService
+  url: https://www.sonatus.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.sonatus.com/privacy-policy/
+- type: Newsroom
+  url: https://www.sonatus.com/company/newsroom/
+- type: Resources
+  url: https://www.sonatus.com/resources/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/sonatus
+- type: Twitter
+  url: https://x.com/sonatushq
+- type: SecondaryMarket
   url: https://forgeglobal.com/sonatus_stock/
+- type: Plans
+  url: plans/sonatus-plans-pricing.yml
+- type: LLMsTxt
+  url: llms/sonatus-llms.txt
+x-enrichment:
+  date: '2026-08-28'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: Sonatus' documentation host docs.sonatus.com answers CloudFront "Request blocked" (AWS WAF deny)
+    with HTTP 403 on every path — including paths that do not exist and with a browser User-Agent — and
+    has never been captured by the Internet Archive, while the public www.sonatus.com sitemap index contains
+    no developer, docs or API section at all; the SDK and APIs Sonatus markets ship only to contracted
+    vehicle OEM customers.
+  evidence:
+  - url: https://docs.sonatus.com/
+    status: 403
+  - url: https://www.sonatus.com/sitemap_index.xml
+    status: 200
+  - url: https://www.sonatus.com/openapi.json
+    status: 404
+  - url: https://api.sonatus.com/
+    status: 0
+  checked: '2026-08-28'
