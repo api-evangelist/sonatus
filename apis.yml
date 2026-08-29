@@ -11,6 +11,17 @@ description: 'Sonatus, Inc. is a Sunnyvale, California automotive software compa
   that developer surface is delivered to contracted OEM customers and is not published on any public developer
   portal.'
 url: https://raw.githubusercontent.com/api-evangelist/sonatus/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.sonatus.com/wp-content/uploads/2023/05/sonatus-logo.svg
 x-type: company
 x-source: harvest:secondary-market
