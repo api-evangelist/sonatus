@@ -1,0 +1,14 @@
+{
+  "repo": "sonatus",
+  "feeds": [
+    {
+      "source": "https://www.sonatus.com/company/",
+      "feed_url": "https://www.sonatus.com/feed/",
+      "title": "",
+      "saved": 1,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 1,
+  "fetched": "2026-08-30T22:33:40Z"
+}
