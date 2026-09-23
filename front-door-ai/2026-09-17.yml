@@ -1,0 +1,30 @@
+# Front Door AI Index — sonatus — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: sonatus
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.sonatus.com
+  final_host: www.sonatus.com
+  ownership: own
+  owner: sonatus
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 31
+  host_score: 31
+  density: 48.29
+  words: 642
+  tiers:
+    agentic: 2
+    core: 29
+    model: 0
+  ambiguous: 12
+  top_terms:
+    AI: 28
+    smart: 8
+    intelligence: 4
+    artificial intelligence: 1
+    copilot: 1
+    embedding: 1
